@@ -13,4 +13,5 @@ public class DuplicataRequestDTO {
 
     private String nomeSacador;
     private BigDecimal valorDuplicata;
+    private String nomeSacado;
 }
