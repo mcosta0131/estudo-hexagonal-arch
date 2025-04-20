@@ -1,18 +1,17 @@
 package com.estudohexagonalarch.application.service;
 
 import com.estudohexagonalarch.application.inbound.DuplicataUseCase;
-import com.estudohexagonalarch.application.outbound.DuplicataOutPutPort;
+import com.estudohexagonalarch.application.outbound.DuplicataOutputPort;
 import com.estudohexagonalarch.domain.DuplicataDomain;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
 public class DuplicataService implements DuplicataUseCase {
 
-    private final DuplicataOutPutPort duplicataOutPutPort;
+    private final DuplicataOutputPort duplicataOutPutPort;
 
-    public DuplicataService(@Qualifier("client") DuplicataOutPutPort duplicataOutPutPort) {
+    public DuplicataService(@Qualifier("client") DuplicataOutputPort duplicataOutPutPort) {
         this.duplicataOutPutPort = duplicataOutPutPort;
     }
 

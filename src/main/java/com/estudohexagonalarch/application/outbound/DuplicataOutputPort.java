@@ -2,7 +2,7 @@ package com.estudohexagonalarch.application.outbound;
 
 import com.estudohexagonalarch.domain.DuplicataDomain;
 
-public interface DuplicataOutPutPort {
+public interface DuplicataOutputPort {
 
     void enviaDuplicata(DuplicataDomain domain);
 
