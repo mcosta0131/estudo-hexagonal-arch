@@ -18,5 +18,4 @@ public class DuplicataDTOMapper {
                 .valorDuplicata(domain.getValorDuplicata())
                 .build();
     }
-
 }
